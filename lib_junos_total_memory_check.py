@@ -7,7 +7,6 @@ from pprint import pprint
 
 def get_system_total_memory(dut_host):
     '''Command sets for device configuration'''
-    #command_set_1 = [f'show system memory | match "/" | except ":" | no-more']
     command_set_1 = [f'show system memory | match memory: | no-more']
     '''Create handle'''
     dut_host_session = create_handle_quiet(dut_host)
